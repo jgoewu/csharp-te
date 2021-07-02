@@ -1,0 +1,26 @@
+﻿<Window x:Class="A_02.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:A_02"
+        mc:Ignorable="d"
+        Title="About" Height="220" Width="400"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterOwner"
+        >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Button Grid.Row="1" Height="20" Width="75" Content="Close" Name="btnCloseAbout" Click="btnCloseAbout_Click"/>
+        <TextBlock TextAlignment="Center" FontSize="25" Margin="30" Text="Kakou"/>
+        <TextBlock Grid.Row="0" TextAlignment="Center" Margin="40,70,40,10" Name="txtAbout" TextWrapping="Wrap" FontSize="12">
+             A simple text editor with basic functionality<LineBreak/><LineBreak/>
+             <Bold>Version:</Bold> 0.8 <LineBreak/>
+             <Bold>Author:</Bold> Jerry Goe <LineBreak/>
+        </TextBlock>
+        
+    </Grid>
+</Window>
